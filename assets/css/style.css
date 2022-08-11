@@ -1,0 +1,1131 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    background-color: #000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1142px;
+}
+
+.header-logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.header-menu ul {
+    margin: 0;
+    height: 100px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-menu a {
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 600;
+    height: 95px;
+    border-bottom: 5px solid #000;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.header-menu a:hover,
+.header-menu .active {
+    border-bottom: 5px solid #b98b59;
+    color: #ccc;
+}
+
+/* aqui termina o header */
+
+/* aqui começa o primeiro banner */
+
+.banner {
+    margin: 0 auto;
+    width: 100vw;
+    height: calc(100vh - 100px);
+    overflow: hidden;
+    background-image: url('../images/complementos/bg.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.banner-slides {
+    display: flex;
+    width: 400%;
+    height: calc(100vh - 100px);
+}
+
+.banner-slides input {
+    display: none;
+}
+
+.banner-slide {
+    width: 25%;
+    position: relative;
+    transition: 0.4s;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-slide h1 {
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+
+.banner-slide p {
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.banner-slide button {
+    margin-top: 30px;
+    background-color: #b98b59;
+    color: #fff;
+    border: 1px solid #b98b59;
+    border-radius: 20px;
+    padding: 12px 30px;
+}
+
+.banner-slide span {
+    text-transform: uppercase;
+    color: #b98b59;
+    font-size: 60px;
+}
+
+.navigation-bar {
+    position: absolute;
+    width: 100vw;
+    margin-top: -45px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 3px solid #b98b59;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 30px;
+}
+
+.manual-btn:hover {
+    background: #b98b59;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -25%;
+}
+
+#radio3:checked~.first {
+    margin-left: -50%;
+}
+
+/* aqui termina o primeiro banner */
+
+
+/* aqui terá todo o padrão do site */
+
+.default {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.default .section-title,
+.default .section-desc {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+}
+
+.default .section-title {
+    font-size: 24px;
+}
+
+.default .section-desc {
+    font-size: 12px;
+    color: #CCC;
+    margin: 10px;
+    margin-bottom: 40px;
+}
+
+.default .section-body {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.default.light {
+    background-color: #F7F7F7;
+}
+
+.default.light .section-title,
+.default.light .section-body {
+    color: #000;
+}
+
+.default.dark {
+    background-color: #000;
+}
+
+.default.dark .section-title,
+.default.dark .section-body {
+    color: #FFF;
+}
+
+/* aqui termina todo o padrão do site */
+
+
+/* aqui começa a section about us */
+
+.aboutus {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-left p {
+    line-height: 26px;
+    margin-right: 30px;
+}
+
+.about-left button {
+    margin-top: 12px;
+    background-color: #b98b59;
+    color: #fff;
+    border: 1px solid #b98b59;
+    border-radius: 20px;
+    padding: 12px 40px;
+}
+
+.about-right img {
+    width: 445px;
+    height: 277px;
+    box-shadow: 0px 6px 10px #333;
+}
+
+/* aqui termina a section about us */
+
+
+/* aqui começa a section services */
+
+.services {
+    display: flex;
+}
+
+.services-conteudo {
+    text-align: center;
+    flex: 1;
+    padding: 15px;
+    border-right: 2px solid #333;
+}
+
+.services-conteudo:first-child {
+    border-left: 2px solid #333;
+}
+
+.services-conteudo img {
+    width: 60px;
+}
+
+.services-conteudo h4 {
+    margin-left: 22px;
+    margin-right: 22px;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.services-conteudo p {
+    font-size: 13px;
+    color: #999;
+    margin-top: 10px;
+}
+
+/* aqui termina a section services */
+
+
+/* aqui começa a section projects */
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-menu {
+    border: 1px solid #CCC;
+    background-color: #EEE;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.projects-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+.projects-menu li {
+    padding: 1px 12px;
+    border-left: 1px solid #cfcfcf;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 12px 18px;
+    border-bottom: 3px solid #EEE;
+    cursor: pointer;
+}
+
+.projects-menu li:first-child {
+    border-left: 0;
+    margin-left: 15px;
+}
+
+.projects-menu li:last-child {
+    margin-right: 15px;
+}
+
+.projects-menu li:hover,
+.projects-menu li.active {
+    border-bottom: 3px solid #b98b59;
+}
+
+
+
+.projects-gallery {
+    max-width: 1140px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projects-photo {
+    width: 280px;
+}
+
+.projects-photoarea {
+    margin: 10px;
+    width: 260px;
+    height: 165px;
+}
+
+.projects-photoarea img {
+    width: inherit;
+    height: inherit;
+}
+
+.projects-photoarea--info {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: inherit;
+    height: inherit;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    box-shadow: 0px 6px 10px #000;
+}
+
+.projects-photoarea--info h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.projects-photoarea:hover .projects-photoarea--info {
+    display: flex;
+}
+
+/* aqui termina a section projects */
+
+
+/* aqui começa a section teams */
+
+.bg-team {
+    background-image: url('../images/complementos/team-bg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.section-team {
+    overflow: hidden;
+    width: 100vw;
+    max-width: 882px;
+    margin: auto;
+}
+
+.team-slides {
+    display: flex;
+    width: 400%;
+    height: 460px;
+}
+
+.team-slides input {
+    display: none;
+}
+
+.team-slide {
+    background-color: #fff;
+    height: 380px;
+    width: 280px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.8s;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.team-slide img {
+    margin-top: -15px;
+}
+
+.team-slide--img {
+    width: 160px;
+}
+
+.team-slide h1 {
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.team-slide p {
+    color: #999;
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+.team-social {
+    display: flex;
+    margin-top: 40px;
+}
+
+.team-social img {
+    margin-top: 2px;
+}
+
+.team-social a {
+    display: inline-flex;
+    /* para que o link possa ter propriedades para mudar a estrutura */
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: #CCC;
+    border-radius: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.team-social a:hover {
+    background-color: #B28756;
+}
+
+.navigation-bar2 {
+    width: 100vw;
+    max-width: 882px;
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 3px solid #b98b59;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 30px;
+}
+
+.manual-btn:hover {
+    background: #b98b59;
+}
+
+#radio4:checked~.first {
+    margin-left: 0;
+}
+
+#radio5:checked~.first {
+    margin-left: -25%;
+}
+
+#radio6:checked~.first {
+    margin-left: -50%;
+}
+
+/* aqui termina a section teams */
+
+
+/* aqui começa a section clients */
+
+.clients {
+    margin: auto;
+    width: 100vw;
+    max-width: 880px;
+    overflow: hidden;
+}
+
+.clients-slides {
+    display: flex;
+    width: 400%;
+}
+
+.clients-slides input {
+    display: none;
+}
+
+.clients-slide {
+    width: 100vw;
+    max-width: 880px;
+    position: relative;
+    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.clients-slide h1 {
+    margin: 0;
+    margin-top: 30px;
+    font-size: 25px;
+    color: #000;
+    text-align: center;
+}
+
+.clients-slide p {
+    text-align: center;
+    color: #555;
+    font-size: 16px;
+    margin-top: 10px;
+    max-width: 800px;
+    line-height: 25px;
+}
+
+.clients-quote {
+    margin: 20px;
+}
+
+.navigation-bar3 {
+    width: 100vw;
+    max-width: 882px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 3px solid #b98b59;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 30px;
+}
+
+.manual-btn:hover {
+    background: #b98b59;
+}
+
+#radio7:checked~.first {
+    margin-left: 0;
+}
+
+#radio8:checked~.first {
+    margin-left: -25%;
+}
+
+#radio9:checked~.first {
+    margin-left: -50%;
+}
+
+/* aqui termina a section clients */
+
+/* aqui começa a section companies */
+
+.companies {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.companies-container {
+    width: 100vw;
+    max-width: 1140px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.companies-image {
+    padding: 30px 45px;
+}
+
+/* aqui termina a section companies */
+
+/* aqui começa a section prices */
+
+.bgprice {
+    background-color: #ededed;
+}
+
+.price {
+    width: 100vw;
+    max-width: 1140px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.price-box {
+    width: 222px;
+    height: 305px;
+    background-color: #fff;
+    text-align: center;
+    margin: 15px;
+    padding: 30px 10px;
+}
+
+.price-title {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.price-price {
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.price-month {
+    color: #999;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.price-itens {
+    color: #555;
+}
+
+.price-box button {
+    margin-top: 26px;
+    padding: 12px 30px;
+    border: 0;
+    border-radius: 18px;
+    background-color: #373737;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.price-box button:hover {
+    background-color: #B28756;
+}
+
+/* aqui começa a section prices */
+
+
+/* aqui começa a section premium */
+
+.premium {
+    margin: auto;
+    width: 100vw;
+    max-width: 1140px;
+    overflow: hidden;
+}
+
+.premium-slides {
+    display: flex;
+    width: 400%;
+}
+
+.premium-slides input {
+    display: none;
+}
+
+.premium-slide {
+    width: 100vw;
+    max-width: 1140px;
+    position: relative;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.premium-right {
+    flex: 1;
+}
+
+.premium-item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.premium-item img {
+    width: 30px;
+    height: 28px;
+    margin-right: 20px;
+}
+
+.premium-item div {
+    flex: 1;
+    color: #999;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.premium-item div h4 {
+    color: #000;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.premium-left {
+    width: 45%;
+    display: flex;
+    justify-content: end;
+}
+
+.premium-right {
+    width: 55%;
+}
+
+.premium-button {
+    display: flex;
+    justify-content: center;
+}
+
+.premium-button button {
+    margin-top: 40px;
+    background-color: #b98b59;
+    color: #fff;
+    border: 1px solid #b98b59;
+    border-radius: 20px;
+    padding: 12px 30px;
+    width: 100vw;
+    max-width: 198px;
+}
+
+.navigation-bar4 {
+    width: 100vw;
+    max-width: 1142px;
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+    border-top: 1px solid #ddd;
+}
+
+.manual-btn {
+    border: 3px solid #b98b59;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 30px;
+}
+
+.manual-btn:hover {
+    background: #b98b59;
+}
+
+#radio11:checked~.first {
+    margin-left: 0;
+}
+
+#radio12:checked~.first {
+    margin-left: -25%;
+}
+
+#radio13:checked~.first {
+    margin-left: -50%;
+}
+
+/* aqui termina a section premium */
+
+
+/* aqui começa a section facts */
+
+.facts {
+    display: flex;
+}
+
+.facts-conteudo {
+    text-align: center;
+    flex: 1;
+    padding: 15px;
+}
+
+.facts-conteudo div {
+    font-size: 50px;
+    color: #b98b59;
+    font-weight: bold;
+}
+
+.facts-conteudo h4 {
+    margin-left: 22px;
+    margin-right: 22px;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.facts-conteudo p {
+    font-size: 13px;
+    color: #999;
+    margin-top: 10px;
+}
+
+/* aqui termina a section facts */
+
+/* aqui começa a section social */
+
+.sociais {
+    display: flex;
+    justify-content: center;
+}
+
+.sociais-container {
+    width: 100vw;
+    max-width: 880px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sociais-image1,
+.sociais-image2,
+.sociais-image3,
+.sociais-image4,
+.sociais-image5,
+.sociais-image6 {
+    display: flex;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.sociais-image1 {
+    margin-right: 30px;
+    font-weight: bold;
+    color: #999;
+    font-size: 16px;
+    
+}
+
+.sociais-image1 img {
+    margin-right: 10px;
+}
+
+.sociais-image2 p,
+.sociais-image3 p,
+.sociais-image4 p,
+.sociais-image5 p,
+.sociais-image6 p {
+    font-size: 11px;
+    color: #555;
+}
+
+.sociais-image2,
+.sociais-image3,
+.sociais-image4,
+.sociais-image5,
+.sociais-image6 {
+    display: flex;
+}
+
+.sociais-image2 a,
+.sociais-image3 a,
+.sociais-image4 a,
+.sociais-image5 a,
+.sociais-image6 a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.sociais-image2 a {
+    background-color: #36c3f1;
+}
+
+.sociais-image3 a {
+    background-color: #137cb5;
+}
+
+.sociais-image4 a {
+    background-color: #336296;
+}
+
+.sociais-image5 a {
+    background-color: #e64239;
+}
+
+.sociais-image6 a {
+    background-color: #b91d2a;
+}
+
+/* aqui termina a section social */
+
+
+/* aqui começa a section contact */
+
+.contact {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.contact input[type=text],
+.contact textarea {
+    width: 100%;
+    height: 40px;
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid #CCC;
+    outline: 0;
+    margin-top: 40px;
+}
+
+.contact textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-firstline {
+    display: flex;
+}
+
+.contact-firstline input:first-child {
+    margin-right: 40px;
+}
+
+.contact .button {
+    margin-top: 40px;
+    background-color: #b98b59;
+    color: #fff;
+    border: 1px solid #b98b59;
+    border-radius: 20px;
+    padding: 12px 30px;
+    width: 100vw;
+    max-width: 198px;
+}
+
+/* aqui termina a section contact */
+
+
+/* aqui começa a section maps */
+
+.map {
+    background-image: url(../images/complementos/mapa.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.map-area {
+    width: 100vw;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.map-info {
+    width: 40%;
+    padding: 30px;
+    background-color: #fff;
+    color: #000;
+}
+
+.map-info--item {
+    display: flex;
+    align-items: center;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.map-info-itemimg {
+    width: 25px;
+    height: 25px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: #999;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.map-info-itemimg img {
+    width: 15px;
+    height: auto;
+}
+
+/* aqui termina a section map */
+
+
+/* aqui começa a section footer */
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+}
+
+.rodape-container {
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    position: relative;
+}
+
+.rodape-social {
+    display: flex;
+}
+
+.rodape-social img {
+    margin-top: 2px;
+}
+
+.rodape-social a {
+    display: inline-flex;
+    /* para que o link possa ter propriedades para mudar a estrutura */
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    border-radius: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.rodape-social a:hover {
+    background-color: #B28756;
+}
+
+.rodape-left {
+    margin-right: 50px;
+}
+
+.rodape-center {
+    margin-right: 20px;
+    margin-bottom: 80px;
+}
+
+.rodape-center p {
+    font-size: 13px;
+    color: #999;
+    line-height: 20px;
+}
+
+.rodape-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    background-color: #333;
+    padding: 40px 80px;
+}
+
+.rodape-right input {
+    background: transparent;
+    padding-bottom: 10px;
+    border: 0;
+    border-bottom: 2px solid #999;
+}
+
+.rodape button {
+    margin-top: 18px;
+    background-color: #b98b59;
+    color: #fff;
+    border: 1px solid #b98b59;
+    border-radius: 20px;
+    padding: 12px 30px;
+    width: 100vw;
+    max-width: 158px;
+}
+
+.rodape-info {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+}
+
+.menumobile {
+    width: 47px;
+    height: 40px;
+    padding: 30px;
+}
+
+.menumobile {
+    display: none;
+}
